@@ -1,4 +1,4 @@
-package com.example.custombargraph.ui.theme
+package com.myapps.custombargraph.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

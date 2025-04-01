@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.custombargraph'
-    compileSdk 33
+    namespace 'com.myapps.custombargraph'
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.custombargraph"
-        minSdk 21
+        applicationId "com.myapps.custombargraph"
+        minSdk 26
         targetSdk 33
         versionCode 1
         versionName "1.0"

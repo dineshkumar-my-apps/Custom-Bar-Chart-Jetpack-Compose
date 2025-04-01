@@ -1,4 +1,4 @@
-package com.example.custombargraph.ui.theme
+package com.myapps.custombargraph.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.example.custombargraph
+package com.myapps.custombargraph
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -15,10 +15,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Color.Companion.Black
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.custombargraph.ui.theme.CustomBarGraphTheme
-import com.example.custombargraph.ui.theme.Purple500
+import androidx.compose.ui.unit.sp
+import com.myapps.custombargraph.ui.theme.CustomBarGraphTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,19 +43,21 @@ class MainActivity : ComponentActivity() {
                     val datesList = mutableListOf(1,2,3,4,5,6,7)
 
                     dataList.forEachIndexed { index, value ->
-
                         floatValue.add(index = index, element = value.toFloat()/dataList.max().toFloat())
-
                     }
 
                     Text(
                         text = "Custom Bar Graph",
-                        color = Color.Black,
-                        style = MaterialTheme.typography.h5,
                         modifier = Modifier.padding(bottom = 20.dp),
-                        fontWeight = MaterialTheme.typography.h5.fontWeight,
                         fontSize = MaterialTheme.typography.h5.fontSize,
-                        textAlign = androidx.compose.ui.text.style.TextAlign.Center
+                        textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+                        fontWeight = FontWeight.Bold,
+                        maxLines = 1,
+                        style = TextStyle(
+                            color = Black,
+                            fontSize = 12.sp,
+                            textAlign = TextAlign.Start,
+                        )
                     )
 
                     Spacer(modifier = Modifier.padding(20.dp))

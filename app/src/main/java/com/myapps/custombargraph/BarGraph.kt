@@ -1,4 +1,4 @@
-package com.example.custombargraph
+package com.myapps.custombargraph
 
 import android.graphics.Paint
 import androidx.compose.animation.core.animateFloatAsState

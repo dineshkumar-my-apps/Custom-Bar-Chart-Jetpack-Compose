@@ -1,4 +1,4 @@
-package com.example.custombargraph
+package com.myapps.custombargraph
 
 enum class BarType {
 
