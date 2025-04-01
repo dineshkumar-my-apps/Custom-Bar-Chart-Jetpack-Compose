@@ -62,7 +62,7 @@ class MainActivity : ComponentActivity() {
 
                     Spacer(modifier = Modifier.padding(20.dp))
 
-                    BarGraph(
+                    BarGraphWithBarClick(
                         graphBarData = floatValue,
                         xAxisScaleData = datesList,
                         barData_ = dataList,
